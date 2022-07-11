@@ -1,0 +1,10 @@
+
+@use '../abstracts/' as *;
+.btn {
+    border: 1.5px solid #373737;
+    color: #373737;
+    padding: 10px 50px;   
+    border-radius: 20px;
+    font-weight: 500;
+    // background: white;
+}

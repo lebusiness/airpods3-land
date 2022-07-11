@@ -1,0 +1,40 @@
+@use '../abstracts' as *;
+
+.advantage {
+    padding: $padding-section 0;
+    font-family: 'SF Pro Display';
+    &__subtitle {
+        margin-top: 10px;
+    }
+    &__items {
+        margin-top: $margin-content;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        @media (max-width: map-get($container-max-widths, md)) {
+            grid-template-columns: 1fr;
+            gap: 30px;
+        } 
+        
+    }
+    &__item {
+        justify-self: center;
+        text-align: center;
+        padding: 0 50px;
+        @media (max-width: map-get($container-max-widths, md)) {
+            padding: 0 20px;
+        } 
+    }
+    &__icon {
+        height: 70px;
+    }
+    &__description {
+        margin-top: 10px;
+    }
+    .wrap {
+        display: flex;
+        justify-content: center;
+    }
+    &__btn {
+        margin-top: 40px;
+    }
+}

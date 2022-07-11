@@ -1,0 +1,7 @@
+@use '../abstracts/' as *;
+.title {
+    font-family: 'SF Pro Display';
+    font-size: 30px;
+    color: $main-color;
+    text-align: center;
+}
